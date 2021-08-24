@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  background-color: blue;
+}
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+  height: 100%;
+}
+
+#main {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+  overflow: auto;
+}
+
+.header {
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+
+.content {
+  padding: 20px;
+  text-align: right;
+  height: 135%;
+  margin-top: 100px;
+}
+
+.content table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content table td {
+  padding: 10px;
+}
+
+.name {
+  font-size: 60pt;
+  font-weight: 900;
+}
+
+.slogan {
+  font-size: 25pt;
+  letter-spacing: 0.3em;
+}
+
+.footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.header li a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 40px 50px;
+  text-decoration: none;
+  font-size: 25pt;
+}
+
+.footer li {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 20px 0 20px 30px;
+  font-size: 20pt;
+}
+
+.footer li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: bolder;
+  letter-spacing: 0.3em;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover {
+  color: gold;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.container {
+  position: absolute;
+  height: 300px;
+  width: 1000px;
+  top: 150px;
+  left: calc(50% - 500px);
+  display: flex;
+}
+
+.card {
+  display: flex;
+  height: 350px;
+  width: 270px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}

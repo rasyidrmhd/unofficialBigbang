@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Member</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/crown.ico" />
+  </head>
+  <body id="main" style="background-image: url(./assets/image/bgmem.jfif)">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="member.html">MEMBER</a>
+        <a href="about.html">ABOUT</a>
+      </div>
+    </div>
+
+    <div class="header" id="header">
+      <ul>
+        <li>
+          <a href="index.html" style="color: gold"><i class="fas fa-crown"></i></a>
+        </li>
+        <li style="float: right" id="menu">
+          <a href="javascript:void(0)" onclick="openNav()"><i class="fas fa-stream"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="card" style="background-image: url(./assets/image/top.jpg); background-size: cover">
+        <h3 class="title">T.O.P</h3>
+      </div>
+      <div class="card" style="background-image: url(./assets/image/taeyang.jpg); background-size: cover">
+        <h3 class="title">Taeyang</h3>
+      </div>
+      <div class="card" style="background-image: url(./assets/image/gd.jpg); background-size: cover">
+        <h3 class="title">G Dragon</h3>
+      </div>
+      <div class="card" style="background-image: url(./assets/image/daesung.jpg); background-size: cover">
+        <h3 class="title">Daesung</h3>
+      </div>
+      <div class="card" style="background-image: url(./assets/image/seungri.jpg); background-size: cover">
+        <h3 class="title">Seungri</h3>
+      </div>
+    </div>
+
+    <div class="footer">
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/bigbang_official/?hl=id"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/yg_globalvip"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCzw-C7fNfs018R1FzIKnlaA"><i class="fab fa-youtube"></i></a>
+        </li>
+        <li style="float: right; padding-right: 50px; padding-top: 30px; font-size: 12pt"><a href="https://github.com/rasyidrmhd" style="color: #366473">Rasyidrmhd</a> | Simple Web Challenge</li>
+      </ul>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+        document.getElementById("menu").style.display = "none";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+        document.getElementById("menu").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

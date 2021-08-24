@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/crown.ico" />
+  </head>
+  <body id="main" style="background-color: #fff">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="member.html">MEMBER</a>
+        <a href="about.html">ABOUT</a>
+      </div>
+    </div>
+
+    <div class="header" id="header">
+      <ul>
+        <li>
+          <a href="index.html" style="color: gold"><i class="fas fa-crown"></i></a>
+        </li>
+        <li style="float: right" id="menu">
+          <a href="javascript:void(0)" onclick="openNav()"><i class="fas fa-stream"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <table>
+        <tr>
+          <td><img src="./assets/image/me.jpeg" style="height: 350px; width: auto; border-radius: 20px" alt="" /></td>
+          <td>
+            <p style="text-align: justify; width: 370px; line-height: 1.5; font-size: 14pt">
+              Hello World! <i class="fas fa-globe-asia" style="color: dodgerblue"></i> <br />
+              My name is Muhammad Rasyid Ridho. As you can see, I'm a VIP and I've created an unofficial Big Bang website. I hope you enjoy! lol <i class="fas fa-laugh-beam" style="color: gold"></i>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="footer">
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/rasyidrmhd"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/rasyidrmhd"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/rasyidrmhd"><i class="fab fa-github"></i></a>
+        </li>
+        <li style="float: right; padding-right: 50px; padding-top: 30px; font-size: 12pt"><a href="https://github.com/rasyidrmhd" style="color: steelblue">Rasyidrmhd</a> | Simple Web Challenge</li>
+      </ul>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+        document.getElementById("menu").style.display = "none";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+        document.getElementById("menu").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
